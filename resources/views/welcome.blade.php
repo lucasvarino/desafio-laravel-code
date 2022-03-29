@@ -73,7 +73,7 @@
                                 <p class="text-slate-500 font-medium flex items-center">
                                     <ion-icon name="calendar" class="mr-1"></ion-icon> 12/02 - 18/04
                                 </p>
-                                <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Acessar</button>
+                                <a href="#" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Acessar</a>
                             </div>
                         </div>
                     </div> <!- Cards dos Campeonatos >
