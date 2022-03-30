@@ -14,13 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('players', function (Blueprint $table) {
-            $table->uuid('id')->primary();
+            $table->id();
             $table->string('name');
             $table->integer('age');
             $table->string('nationality');
             $table->integer('wins')->default(0);
             $table->integer('loses')->default(0);
-            $table->uuid('team_id');
+            $table->bigInteger('team_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('team_id')

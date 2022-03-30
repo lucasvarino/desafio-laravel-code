@@ -9,6 +9,13 @@ class Team extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'country',
+        'wins',
+        'loses'
+    ];
+
     public function players()
     {
         return $this->hasMany(Player::class);

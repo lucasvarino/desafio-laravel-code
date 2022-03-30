@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('championships', function (Blueprint $table) {
-            $table->uuid('id')->primary();
+            $table->id();
             $table->string('name');
             $table->string('game');
             $table->date('start_date');

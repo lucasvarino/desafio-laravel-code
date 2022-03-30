@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('team_championships', function (Blueprint $table) {
-            $table->uuid('team_id');
-            $table->uuid('championship_id');
+            $table->bigInteger('team_id')->unsigned();
+            $table->bigInteger('championship_id')->unsigned();
             $table->integer('score');
             $table->timestamps();
 
