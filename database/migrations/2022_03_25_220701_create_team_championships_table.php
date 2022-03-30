@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('team_championships', function (Blueprint $table) {
             $table->bigInteger('team_id')->unsigned();
-            $table->bigInteger('championship_id')->unsigned();
+            $table->bigInteger('championships_id')->unsigned();
             $table->integer('score');
             $table->timestamps();
 
@@ -24,7 +24,7 @@ return new class extends Migration
                 ->on('teams')
                 ->onDelete('cascade');
 
-            $table->foreign('championship_id')
+            $table->foreign('championships_id')
                 ->references('id')
                 ->on('championships')
                 ->onDelete('cascade');

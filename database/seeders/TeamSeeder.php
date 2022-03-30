@@ -7,7 +7,7 @@ use App\Models\Team;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class TeamSeed extends Seeder
+class TeamSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,6 +18,7 @@ class TeamSeed extends Seeder
     {
         Team::factory()
             ->count(5)
+            ->hasPlayers(5)
             ->create();
     }
 }
