@@ -12,7 +12,7 @@ class TeamController extends Controller
     public function index(Request $request)
     {
         $teams = Team::all();
-        dd($teams);
+
         return view('teams.index', compact('teams'));
     }
 }
