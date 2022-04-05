@@ -39,13 +39,13 @@
             :class="{ 'top-[80px] opacity-100': isOpen, '': !isOpen }"
         >
             <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-base hover:text-purple-600 duration-500">Home</a>
+                <a href="/" class="text-base hover:text-purple-600 duration-500">Home</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-base hover:text-purple-600 duration-500">Players</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-base hover:text-purple-600 duration-500">Teams</a>
+                <a href="/teams" class="text-base hover:text-purple-600 duration-500">Teams</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-base hover:text-purple-600 duration-500">Championships</a>

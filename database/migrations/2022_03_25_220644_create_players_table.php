@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('nationality');
             $table->integer('wins')->default(0);
             $table->integer('loses')->default(0);
+            $table->integer('role'); // 0 - Top; 1 - JG; 2 - Mid; 3 - ADC; 4 - Sup
             $table->bigInteger('team_id')->unsigned();
             $table->timestamps();
 

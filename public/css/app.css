@@ -491,6 +491,39 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2 {
   margin-right: 0.5rem;
 }
+.ml-5 {
+  margin-left: 1.25rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
+.ml-0 {
+  margin-left: 0px;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mr-5 {
+  margin-right: 1.25rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-11 {
+  margin-top: 2.75rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -503,11 +536,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-24 {
   height: 6rem;
 }
-.h-\[30px\] {
-  height: 30px;
-}
 .h-\[200px\] {
   height: 200px;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-\[30px\] {
+  height: 30px;
 }
 .h-\[150px\] {
   height: 150px;
@@ -515,8 +551,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full {
   width: 100%;
 }
-.w-24 {
-  width: 6rem;
+.w-1\/2 {
+  width: 50%;
 }
 .max-w-xl {
   max-width: 36rem;
@@ -530,12 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-xs {
   max-width: 20rem;
 }
-.max-w-2xl {
-  max-width: 42rem;
-}
-.max-w-3xl {
-  max-width: 48rem;
-}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -544,6 +574,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -558,6 +591,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 .rounded-md {
   border-radius: 0.375rem;
@@ -607,14 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-purple-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
-}
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-.bg-purple-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
 }
 .p-5 {
   padding: 1.25rem;
@@ -675,6 +705,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-16 {
   padding-top: 4rem;
 }
+.pt-8 {
+  padding-top: 2rem;
+}
 .text-center {
   text-align: center;
 }
@@ -719,6 +752,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-semibold {
   font-weight: 600;
 }
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -756,6 +795,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 .antialiased {
   -webkit-font-smoothing: antialiased;
@@ -816,10 +863,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-purple-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
-}
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
@@ -890,6 +933,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:shrink-0 {

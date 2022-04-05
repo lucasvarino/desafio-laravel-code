@@ -28,6 +28,7 @@ class PlayerFactory extends Factory
             'wins' => $this->faker->numberBetween(0, 20),
             'loses' => $this->faker->numberBetween(0, 20),
             'team_id' => Team::factory(),
+            'role' => $this->faker->numberBetween(0, 4),
             'created_at' => now(),
             'updated_at' => now()
         ];
